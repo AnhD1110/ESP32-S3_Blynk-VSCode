@@ -37,21 +37,21 @@ BLYNK_WRITE(V2)
 int pinValue = param.asInt();
   if(pinValue == 1) // RED
   {
-    digitalWrite(4, HIGH);  // Tắt Green
-    digitalWrite(5, HIGH); // Bật Red (GPIO 5)
-    digitalWrite(6, LOW);  // Tắt Blue
+    digitalWrite(4, HIGH);  
+    digitalWrite(5, HIGH);
+    digitalWrite(6, LOW); 
   }
-  else if(pinValue == 2) // YELLOW (Cần kết hợp Red + Green)
+  else if(pinValue == 2) 
   {
-    digitalWrite(4, HIGH); // Bật Green (GPIO 4)
-    digitalWrite(5, LOW); // Bật Red (GPIO 5)
-    digitalWrite(6, LOW);  // Tắt Blue
+    digitalWrite(4, HIGH); 
+    digitalWrite(5, LOW); 
+    digitalWrite(6, LOW);  
   }
-  else if(pinValue == 3) // BLUE
+  else if(pinValue == 3) 
   {
-    digitalWrite(4, LOW);  // Tắt Green
-    digitalWrite(5, HIGH);  // Tắt Red
-    digitalWrite(6, HIGH); // Bật Blue (GPIO 6)
+    digitalWrite(4, LOW); 
+    digitalWrite(5, HIGH); 
+    digitalWrite(6, HIGH); 
   }
   else
   {
